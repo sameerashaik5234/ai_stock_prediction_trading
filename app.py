@@ -19,8 +19,13 @@ qty = st.sidebar.number_input("Quantity", 1, 100, 10)
 st.sidebar.metric("Available Cash", f"Rs.{st.session_state.cash:,.2f}")
 st.sidebar.metric("Stocks Owned", len(st.session_state.portfolio))
 
-st.title("AI Stock Prediction and Trading - Global")
-st.caption("NSE + NASDAQ Stocks | AI Powered Paper Trading")
+# Logo + Title
+col1, col2 = st.columns([1, 5])
+with col1:
+    st.image("logo.png", width=80)
+with col2:
+    st.title("TradeGenie")
+    st.caption("NSE + NASDAQ Stocks | AI Powered Paper Trading")
 
 # DISCLAIMER ADDED HERE
 st.warning("⚠️ **Disclaimer**: This is a PAPER TRADING app for educational purposes only. AI predictions are not financial advice. Do not use this for real money trading. Market data may be delayed.", icon="🚨")
