@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
-st.set_page_config(page_title="AI Stock Trading", layout="wide")
+st.set_page_config(page_title="TradeGenie", layout="wide",page_icon="logo.png")
 
 # Money & Portfolio
 if "cash" not in st.session_state:
