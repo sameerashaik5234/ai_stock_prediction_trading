@@ -22,7 +22,7 @@ st.sidebar.metric("Stocks Owned", len(st.session_state.portfolio))
 # Logo + Title
 col1, col2 = st.columns([1, 5])
 with col1:
-    st.image("logo.png", width=80))
+    st.image("logo.png", width=80)
 with col2:
     st.title("TradeGenie")
     st.caption("NSE + NASDAQ Stocks | AI Powered Paper Trading")
